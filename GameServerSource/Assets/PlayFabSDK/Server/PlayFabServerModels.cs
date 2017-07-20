@@ -3547,7 +3547,6 @@ namespace PlayFab.ServerModels
         /// <summary>
         /// Text of message to send.
         /// </summary>
-        [Obsolete("Use 'Package' instead", false)]
         public string Message;
         /// <summary>
         /// Defines all possible push attributes like message, title, icon, etc

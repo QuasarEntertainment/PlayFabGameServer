@@ -373,6 +373,7 @@ namespace PlayFab.PlayStreamModels
         public uint? TransactionTotal;
         public Currency? TransactionCurrency;
         public string OrderId;
+        public string TransactionId;
         public List<string> PurchasedProduct;
         public string TitleId;
     }
@@ -471,6 +472,14 @@ namespace PlayFab.PlayStreamModels
         public int VirtualCurrencyBalance;
         public int VirtualCurrencyPreviousBalance;
         public string OrderId;
+        public string TitleId;
+    }
+    public class SentEmailEventData : PlayStreamEventBase
+    {
+        public string EmailTemplateName;
+        public bool Success;
+        public string ErrorName;
+        public string ErrorMessage;
         public string TitleId;
     }
     #endregion player
@@ -1056,7 +1065,8 @@ namespace PlayFab.PlayStreamModels
         Other,
         ExcessCapacity,
         LimitExceeded,
-        BuildNotActiveInRegion
+        BuildNotActiveInRegion,
+        Unresponsive
     }
 
     public enum PaymentType

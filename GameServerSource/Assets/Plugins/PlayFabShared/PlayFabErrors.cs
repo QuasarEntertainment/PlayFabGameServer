@@ -305,7 +305,19 @@ namespace PlayFab
         RequestViewConstraintParamsNotAllowed = 1303,
         BadPartnerConfiguration = 1304,
         XboxBPCertificateFailure = 1305,
-        XboxXASSExchangeFailure = 1306
+        XboxXASSExchangeFailure = 1306,
+        InvalidEntityId = 1307,
+        StatisticValueAggregationOverflow = 1308,
+        EmailMessageFromAddressIsMissing = 1309,
+        EmailMessageToAddressIsMissing = 1310,
+        SmtpServerAuthenticationError = 1311,
+        SmtpServerLimitExceeded = 1312,
+        SmtpServerInsufficientStorage = 1313,
+        SmtpServerCommunicationError = 1314,
+        SmtpServerGeneralFailure = 1315,
+        EmailClientTimeout = 1316,
+        EmailClientCanceledTask = 1317,
+        EmailTemplateMissing = 1318
     }
 
     public delegate void ErrorCallback(PlayFabError error);
